@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            /* background-image:url(./hero.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height:100%; */
+            margin:0;
+            padding:0;
+         
+        } 
+       
+        img{
+           width: 100%;
+           height: 100%;
+           position: fixed;
+           
+        }
+        .in_div{
+        width: 200px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+           padding: 20px;
+           box-shadow:1px 1px 10px;
+           transform: translate(-50,-50);
+           position: absolute;
+           top:40%;
+           left: 50%;
+           transform: translate(-40%,-50%);
+           border-radius: 10px;
+           background-color: white;
+
+        }
+        h2{
+            color:rgb(6, 6, 146) ;
+            
+        }
+        span{
+        align-self: end;
+        cursor: pointer;
+         display: block;
+         color:rgb(226, 60, 60);
+         display: none;
+                }
+            button{
+                cursor: pointer;
+                display: block;
+            }
+
+.container{
+   
+   
+    
+    
+    position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           border-radius: 10px;
+}
+
+    
+    </style>
+</head>
+<body>
+
+  <img id='my_img' src="./hero.jpeg" alt="">
+ 
+<div class="container">
+    <div class="in_div">
+        <span id="close">X</span>
+        <h2 id="h4">Modal Project</h2>
+        <button id="btn">Open Modal</button>
+    </div>
+</div>
+    
+
+   
+
+
+
+   
+
+<script src="script.js"></script>
+
+</body>
+</html>
